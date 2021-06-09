@@ -1,0 +1,5 @@
+import DMsimp_s_spin0_4f
+generate p p > y0 j [QCD]
+add process p p > y0 j j [QCD]
+output Spin0ToTauTau_2j_scalar_g1_HT300_M500
+
