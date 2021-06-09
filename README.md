@@ -12,4 +12,5 @@ Madgraph setup for generating Phi(tau tau). Instructions:
 Notes: 
    - CMS stores UFO files at `/afs/cern.ch/cms/generators/www/DMsimp*`
       - Phi(bb) used DMsimp_s_spin0_4f. This appears to be an outdated alpha version... it doesn't work with MG >= 2.6.1, and it doesn't work with HTCondor. It's probably better to use DMsimp_s_spin0.
+      - We should copy the hacked UFO file with tau couplings here, so the genproductions scripts can find it automatically. You can also modify the scripts to find the UFO manually (look for the `wget` command where the UFO is downloaded), but this is bad for future reproducibility. 
    - The recommended version of Madgraph is 2.6.5. Newer versions haven't been validated by GEN yet. 
